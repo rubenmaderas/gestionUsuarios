@@ -1,4 +1,4 @@
-package com.practicas.gestionUsuarios.infraestructure.database.h2.entity;
+package com.practicas.gestionUsuarios.infrastructure.adapters.out.persistence.h2.entity;
 
 import jakarta.persistence.*;
 import lombok.Data;
@@ -9,7 +9,6 @@ import java.time.LocalDateTime;
 @Entity
 @Table(name = "users")
 public class UserEntity {
-
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
@@ -26,4 +25,3 @@ public class UserEntity {
     private LocalDateTime createdAt = LocalDateTime.now();
     private LocalDateTime updatedAt = LocalDateTime.now();
 }
-
